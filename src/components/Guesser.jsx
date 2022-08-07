@@ -30,7 +30,7 @@ const Guesser = () => {
                 <input type="number" value={number} className='form-control' onChange={(e) => setNumber(+e.target.value)} />
             </div>
             <div className='pb-3'>
-                <button className='btn text-white' style={{ backgroundColor: "#7a43b6" }} onClick={handleSubmit}> Guess The Number </button>
+                <button disabled={number===""}className='btn text-white' style={{ backgroundColor: "#7a43b6" }} onClick={handleSubmit}> Guess The Number </button>
             </div>
                 <div className="mb-3">
                     <label htmlFor="lower-limit" className="form-label"> Lower Limit</label>
